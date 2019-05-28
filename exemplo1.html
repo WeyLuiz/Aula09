@@ -43,6 +43,18 @@
         </tbody>
         <tfoot></tfoot>
     </table>
+
+    <script>
+        var = formCadastro = document.forms.cadastro;
+        formCadastro.addEventListener("submit", processaCadastro);
+
+        function processaCadastro(e){
+            e.preventDefault();
+            var nome = formCadastro.nome.value;
+            var idade = Number(formCadastro.idade.alue);
+            var cidade = formCadastro.cidade.value;
+        }
+    </script>
 </body>
 
 </html>
